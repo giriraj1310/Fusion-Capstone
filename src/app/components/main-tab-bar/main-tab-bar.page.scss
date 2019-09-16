@@ -1,0 +1,23 @@
+ion-tab-button {
+  transition: 0.25s;
+
+  &.tab-selected {
+    background-color: var(--ion-color-tertiary);
+  }
+}
+
+ion-badge {
+  background-color: var(--ion-color-tertiary);
+  transform-origin: bottom left;
+  border-radius: 50%;
+  transition: 0.25s;
+
+  &.md {
+    padding: 2px 1px;
+    transform: scale(1.5);
+  }
+
+  &#notifs-badge.hidden {
+    transform: scale(0);
+  }
+}
